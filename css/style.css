@@ -39,14 +39,14 @@ body {
 }
 
 .cocial__img {
-  margin: 20px;
-  width: 80px;
+  margin: 0 30px 5px 0;
+  width: 70px;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .mobile__content {
