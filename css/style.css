@@ -1,8 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: Caveat;
+  src: url(../font/Caveat-Regular.ttf);
 }
 
+body {
+  color: #f9a337;
+  font-family: 'Caveat', sans-serif;
+  font-size: 42px;
+}
 .wrapper {
   background: black;
   position: absolute;
@@ -21,8 +26,38 @@
   background-size: cover;
   background-color: #464646;
 }
+.wrapper__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.cocial__img {
+  margin: 20px;
+  width: 80px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.mobile__content {
+  display: none;
+}
 
 @media (max-width: 768px) {
+  body {
+    font-size: 28px;
+  }
+
   .wrapper__bg {
     width: 100%;
     height: 100%;
@@ -32,5 +67,34 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cocial__img {
+    margin: 5px 0 0px 10%;
+    width: 50px;
+  }
+
+  .mobile__content {
+    display: block;
+  }
+  .mobile__content h2 {
+    margin: 0;
+    padding: 0 0 2px 10%;
+    font-size: 32px;
+  }
+  h2:last-child {
+    padding: 0 0 2px 30%;
+  }
+}
+
+@media (max-height: 740px) {
+  .cocial__img {
+    margin: 2px 0 0px 10%;
+    width: 40px;
   }
 }
